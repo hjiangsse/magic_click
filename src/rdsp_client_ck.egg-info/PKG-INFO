@@ -34,7 +34,7 @@ python -m build
 ### 1.2 安装:
 将安装包拷贝到目标机器，运行下面命令安装：
 ``` bash
-pip install --force-reinstall rdsp-client-ck-0.0.2.tar.gz -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install --force-reinstall rdsp-client-ck-0.0.3.tar.gz -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 安装过程中，会自动获取关联包。
 

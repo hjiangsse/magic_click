@@ -1,12 +1,5 @@
 pyproject.toml
 setup.cfg
-src/DataPlatForm/FactorRead.py
-src/DataPlatForm/FactorWrite.py
-src/DataPlatForm/RawRead.py
-src/DataPlatForm/RawWrite.py
-src/DataPlatForm/Utils.py
-src/DataPlatForm/__init__.py
-src/DataPlatForm/configs.py
 src/rdsp_client_ck.egg-info/PKG-INFO
 src/rdsp_client_ck.egg-info/SOURCES.txt
 src/rdsp_client_ck.egg-info/dependency_links.txt

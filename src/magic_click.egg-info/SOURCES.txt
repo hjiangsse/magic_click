@@ -1,0 +1,7 @@
+pyproject.toml
+setup.cfg
+src/magic_click.egg-info/PKG-INFO
+src/magic_click.egg-info/SOURCES.txt
+src/magic_click.egg-info/dependency_links.txt
+src/magic_click.egg-info/requires.txt
+src/magic_click.egg-info/top_level.txt

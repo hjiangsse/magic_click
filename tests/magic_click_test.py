@@ -1,4 +1,5 @@
 import FastClick.MarketCrawler as crawler
+import FastClick.MarketWriter as writer
 import FastClick.Utils as utils
 
 if __name__ == "__main__":
@@ -9,3 +10,5 @@ if __name__ == "__main__":
 
     fields_info = utils.gen_table_fields_infos_from_dataframe(frame)
     print(fields_info)
+
+    writer.test()

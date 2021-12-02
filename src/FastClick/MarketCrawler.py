@@ -8,6 +8,7 @@ import baostock as bs
 import akshare as ak
 import pandas as pd
 from datetime import datetime
+import FastClick.Utils as utils
 
 #利用baostock提供的接口获取A股历史K线数据
 day_k_columns = "date,code,open,high,low,close,preclose,volume,amount,adjustflag,turn,tradestatus,pctChg,peTTM,psTTM,pcfNcfTTM,pbMRQ,isST"
@@ -59,6 +60,8 @@ def get_day_k_data(code, data_columns, start_date, end_date, adjust_flag='3'):
         print('login respond error_msg:' + lg.error_msg)
         return
     
+    utils.check_date_range(start_date, end_date)
+    
     if len(data_columns) == 0:
         data_columns = day_k_columns
      
@@ -91,7 +94,9 @@ def get_week_or_month_k_data(code, data_columns, start_date, end_date, week_or_m
     if not lg.error_code == '0':
         print('login respond error_msg:' + lg.error_msg)
         return
-   
+
+    utils.check_date_range(start_date, end_date)
+    
     if len(data_columns) == 0:
         data_columns = week_and_month_k_columns
         
@@ -125,7 +130,9 @@ def get_minutes_k_data(code, data_columns, start_date, end_date, minute_freq = '
     if not lg.error_code == '0':
         print('login respond error_msg:' + lg.error_msg)
         return
-   
+
+    utils.check_date_range(start_date, end_date)
+    
     if len(data_columns) == 0:
         data_columns = minutes_k_columns
         

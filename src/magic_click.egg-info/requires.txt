@@ -1,0 +1,5 @@
+numpy
+pandas
+clickhouse_driver
+baostock
+akshare
