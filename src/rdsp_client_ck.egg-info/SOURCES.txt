@@ -1,7 +1,0 @@
-pyproject.toml
-setup.cfg
-src/rdsp_client_ck.egg-info/PKG-INFO
-src/rdsp_client_ck.egg-info/SOURCES.txt
-src/rdsp_client_ck.egg-info/dependency_links.txt
-src/rdsp_client_ck.egg-info/requires.txt
-src/rdsp_client_ck.egg-info/top_level.txt

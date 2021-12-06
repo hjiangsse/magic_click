@@ -8,7 +8,7 @@ import baostock as bs
 import akshare as ak
 import pandas as pd
 from datetime import datetime
-import FastClick.Utils as utils
+import MagicClick.Utils as utils
 
 #利用baostock提供的接口获取A股历史K线数据
 day_k_columns = "date,code,open,high,low,close,preclose,volume,amount,adjustflag,turn,tradestatus,pctChg,peTTM,psTTM,pcfNcfTTM,pbMRQ,isST"

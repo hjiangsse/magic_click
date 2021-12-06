@@ -4,7 +4,7 @@
 # Time: Thu Nov 25 14:18:20 2021
 #-------------------------------------------------------------------------------
 from clickhouse_driver import Client
-from FastClick.configs import *
+from MagicClick.configs import *
 from datetime import datetime, timedelta
 from multiprocessing import Pool
 
