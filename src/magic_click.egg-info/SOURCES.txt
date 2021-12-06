@@ -1,5 +1,10 @@
 pyproject.toml
 setup.cfg
+src/MagicClick/MarketCrawler.py
+src/MagicClick/MarketWriter.py
+src/MagicClick/Utils.py
+src/MagicClick/__init__.py
+src/MagicClick/configs.py
 src/magic_click.egg-info/PKG-INFO
 src/magic_click.egg-info/SOURCES.txt
 src/magic_click.egg-info/dependency_links.txt
