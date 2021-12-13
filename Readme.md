@@ -8,26 +8,26 @@ MagicClick is a python library which is designed to finish the following tasks:
 ### 1.1 per-day k data get:
 > get_day_k_data(code, data_columns, start_date, end_date, adjust_flag='3')  
 > code: "SZ.000001"  
-> data_columns: "" stands for all columns [date,code,open,high,low,close,preclose,volume,amount,adjustflag,turn,tradestatus,pctChg,peTTM,psTTM,pcfNcfTTM,pbMRQ,isST]
+> data_columns: "" stands for all columns [date,code,open,high,low,close,preclose,volume,amount,adjustflag,turn,tradestatus,pctChg,peTTM,psTTM,pcfNcfTTM,pbMRQ,isST]  
 > start_date: "YYYY-MM-DD"  
 > end_date: "YYYY-MM-DD"  
-> adjust_flag:  '3'-"行情未复权", '2': "行情前复权", '1': "行情后复权"
+> adjust_flag:  '3'-"行情未复权", '2': "行情前复权", '1': "行情后复权"  
 ### 1.2 per-week or per-month k data get:
 > get_week_or_month_k_data(code, data_columns, start_date, end_date, week_or_month='w', adjust_flag='3')
 > code: "SZ.000001"  
-> data_columns: "" stands for all columns [date,code,open,high,low,close,volume,amount,adjustflag,turn,pctChg]
+> data_columns: "" stands for all columns [date,code,open,high,low,close,volume,amount,adjustflag,turn,pctChg]  
 > start_date: "YYYY-MM-DD"  
-> end_date: "YYYY-MM-DD" 
-> week_or_month: 'w'-"week", 'm'-'month'
-> adjust_flag:  '3'-"行情未复权", '2': "行情前复权", '1': "行情后复权"
+> end_date: "YYYY-MM-DD"  
+> week_or_month: 'w'-"week", 'm'-'month'  
+> adjust_flag:  '3'-"行情未复权", '2': "行情前复权", '1': "行情后复权"  
 ### 1.3 per-minutes k data get:
-> get_minutes_k_data(code, data_columns, start_date, end_date, minute_freq = '5', adjust_flag='3')
+> get_minutes_k_data(code, data_columns, start_date, end_date, minute_freq = '5', adjust_flag='3')  
 > code: "SZ.000001"  
-> data_columns: "" stands for all columns [date,code,open,high,low,close,volume,amount,adjustflag,turn,pctChg]
+> data_columns: "" stands for all columns [date,code,open,high,low,close,volume,amount,adjustflag,turn,pctChg]  
 > start_date: "YYYY-MM-DD"  
-> end_date: "YYYY-MM-DD"
-> minute_freq: '5'- 5 minutes
-> adjust_flag:  '3'-"行情未复权", '2': "行情前复权", '1': "行情后复权"
+> end_date: "YYYY-MM-DD"  
+> minute_freq: '5'- 5 minutes  
+> adjust_flag:  '3'-"行情未复权", '2': "行情前复权", '1': "行情后复权"  
 
 
 ## 5. 项目时间节点：
