@@ -1,17 +1,17 @@
 # MagicClick
 MagicClick is a python library which is designed to finish the following tasks:
-> Crawl market data from open souce internet data hub;
-> Write the crawled data into a clickhouse cluster data center;
-> Read data from the data center as pandas.DataFrame;
+> Crawl market data from open souce internet data hub;  
+> Write the crawled data into a clickhouse cluster data center;  
+> Read data from the data center as pandas.DataFrame;  
 
 ## 1. Market data crawling:
 ### 1.1 day k data get:
 > get_day_k_data(code, data_columns, start_date, end_date, adjust_flag='3')  
 > code: "SZ.000001"  
 > data_columns: "" stands for all columns
-> start_date: "YYYY-MM-DD"
-> end_date: "YYYY-MM-DD"
-> adjust_flag: 
+> start_date: "YYYY-MM-DD"  
+> end_date: "YYYY-MM-DD"  
+> adjust_flag:   
 ```
   '3': "行情未复权"
   '2': "行情前复权"
