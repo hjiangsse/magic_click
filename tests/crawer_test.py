@@ -34,7 +34,7 @@ if __name__ == "__main__":
     print("time cost: ", time.time() - start)
     print(df_sh_600000)
 
-    # 2. 月间k线数据获取回测
+    # 3. 月间k线数据获取回测
     start = time.time()
     df_sh_600000 = crawler.get_month_k_data_pre_adjust("sh.600000", [])
     print("time cost: ", time.time() - start)
@@ -50,4 +50,18 @@ if __name__ == "__main__":
     print("time cost: ", time.time() - start)
     print(df_sh_600000)
 
-
+    # 4. 5分钟k线数据获取回测
+    start = time.time()
+    df_sh_600000 = crawler.get_5_minutes_k_data_pre_adjust("sh.600000", [])
+    print("time cost: ", time.time() - start)
+    print(df_sh_600000)
+    
+    start = time.time()
+    df_sh_600000 = crawler.get_5_minutes_k_data_post_adjust("sh.600000", [])
+    print("time cost: ", time.time() - start)
+    print(df_sh_600000)
+    
+    start = time.time()
+    df_sh_600000 = crawler.get_5_minutes_k_data_no_adjust("sh.600000", [])
+    print("time cost: ", time.time() - start)
+    print(df_sh_600000)
