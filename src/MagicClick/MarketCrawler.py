@@ -2,7 +2,7 @@
 # Author: hjiang
 # Email: heng.jiang@jingle.ai
 # Time: Thu Nov 25 14:18:20 2021
-# 本模块的功能是利用akshare和baostock提供的接，获取各种维度的k线行情数据
+# 本模块的功能是利用akshare和baostock提供的接口，获取各种维度的k线行情数据
 #-------------------------------------------------------------------------------
 import baostock as bs
 import akshare as ak
@@ -81,6 +81,9 @@ def get_day_k_data(code, data_columns, start_date, end_date, adjust_flag='3'):
     result = pd.DataFrame(data_list, columns=rs.fields)
     result.index = [str(x) for x in result.date]
     result = result.drop(['date'], axis=1)
+
+    #turn字段可能存在空值，将其转换成number
+    result['turn'] = pd.to_numeric(result['turn'], errors='coerce')
     
     #根据全局定义的类类型字，将frame的列转换为特定类型
     for col in result.columns:
@@ -116,6 +119,9 @@ def get_week_or_month_k_data(code, data_columns, start_date, end_date, week_or_m
     result = pd.DataFrame(data_list, columns=rs.fields)
     result.index = [str(x) for x in result.date]
     result = result.drop(['date'], axis=1)
+
+    #turn字段可能存在空值，将其转换成number
+    result['turn'] = pd.to_numeric(result['turn'], errors='coerce')
     
     #根据全局定义的类类型字，将frame的列转换为特定类型
     for col in result.columns:
