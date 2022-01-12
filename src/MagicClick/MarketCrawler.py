@@ -34,7 +34,7 @@ def get_day_k_data_pre_adjust(code, columns, start_date=None, end_date=None):
         start_date = "1990-12-19"
     if (end_date is None):
         end_date = datetime.today().strftime('%Y-%m-%d')
-    return utils.get_day_k_data(code, data_columns, start_date, end_date, adjustflag='2')
+    return utils.get_day_k_data(code, columns, start_date, end_date, adjustflag='2')
 
 #-------------------------------------------------------------------------------
 # 得到一支股票的后复权数据
@@ -44,7 +44,7 @@ def get_day_k_data_aft_adjust(code, columns, start_date=None, end_date=None):
         start_date = "1990-12-19"
     if (end_date is None):
         end_date = datetime.today().strftime('%Y-%m-%d')
-    return utils.get_day_k_data(code, data_columns, start_date, end_date, adjustflag='1')
+    return utils.get_day_k_data(code, columns, start_date, end_date, adjustflag='1')
 
 #-------------------------------------------------------------------------------
 # 得到一支股票的未复权数据
@@ -54,4 +54,4 @@ def get_day_k_data_aft_adjust(code, columns, start_date=None, end_date=None):
         start_date = "1990-12-19"
     if (end_date is None):
         end_date = datetime.today().strftime('%Y-%m-%d')
-    return utils.get_day_k_data(code, data_columns, start_date, end_date, adjustflag='3')
+    return utils.get_day_k_data(code, columns, start_date, end_date, adjustflag='3')
