@@ -139,7 +139,7 @@ def get_5_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=No
 #-------------------------------------------------------------------------------
 # 得到一支股票5分钟k未复权数据
 #-------------------------------------------------------------------------------
-def get_5_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=None):
+def get_5_minutes_k_data_no_adjust(code, columns, start_date=None, end_date=None):
     if (start_date is None):
         start_date = "1999-07-26"
     if (end_date is None):
@@ -169,7 +169,7 @@ def get_15_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=N
 #-------------------------------------------------------------------------------
 # 得到一支股票15分钟k未复权数据
 #-------------------------------------------------------------------------------
-def get_15_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=None):
+def get_15_minutes_k_data_no_adjust(code, columns, start_date=None, end_date=None):
     if (start_date is None):
         start_date = "1999-07-26"
     if (end_date is None):
@@ -199,7 +199,7 @@ def get_30_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=N
 #-------------------------------------------------------------------------------
 # 得到一支股票30分钟k未复权数据
 #-------------------------------------------------------------------------------
-def get_30_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=None):
+def get_30_minutes_k_data_no_adjust(code, columns, start_date=None, end_date=None):
     if (start_date is None):
         start_date = "1999-07-26"
     if (end_date is None):
@@ -229,7 +229,7 @@ def get_60_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=N
 #-------------------------------------------------------------------------------
 # 得到一支股票60分钟k未复权数据
 #-------------------------------------------------------------------------------
-def get_60_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=None):
+def get_60_minutes_k_data_no_adjust(code, columns, start_date=None, end_date=None):
     if (start_date is None):
         start_date = "1999-07-26"
     if (end_date is None):
