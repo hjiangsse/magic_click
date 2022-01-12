@@ -1,4 +1,4 @@
-import MagicClick.MarketCrawler as crawler
+import MagicClick.KCrawler as crawler
 import time
 
 if __name__ == "__main__":
