@@ -9,7 +9,7 @@
 pip install --force-reinstall ./dist/magic-click-0.0.3.tar.gz -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-# 2. 使用样例:
+# 2. 使用样例(tests中有更详细的案例):
 ## 2.1 K线数据抓取:
 ``` python
 import MagicClick.KCrawler as crawler
@@ -26,6 +26,7 @@ if __name__ == "__main__":
     df_sh_600000 = crawler.get_day_k_data_no_adjust("sh.600000", [])
     print(df_sh_600000)
 ```
+
 # 3. 接口分类和汇总:
 ## 3.1 K线数据抓取:
 * KCrawler.get_astock_list()                                                                  #利用akshare提供的数据获取接口，获得A股票名称列表
