@@ -39,7 +39,7 @@ def get_day_k_data_pre_adjust(code, columns, start_date=None, end_date=None):
 #-------------------------------------------------------------------------------
 # 得到一支股票的后复权数据
 #-------------------------------------------------------------------------------
-def get_day_k_data_aft_adjust(code, columns, start_date=None, end_date=None):
+def get_day_k_data_post_adjust(code, columns, start_date=None, end_date=None):
     if (start_date is None):
         start_date = "1990-12-19"
     if (end_date is None):
@@ -49,7 +49,7 @@ def get_day_k_data_aft_adjust(code, columns, start_date=None, end_date=None):
 #-------------------------------------------------------------------------------
 # 得到一支股票的未复权数据
 #-------------------------------------------------------------------------------
-def get_day_k_data_aft_adjust(code, columns, start_date=None, end_date=None):
+def get_day_k_data_no_adjust(code, columns, start_date=None, end_date=None):
     if (start_date is None):
         start_date = "1990-12-19"
     if (end_date is None):
