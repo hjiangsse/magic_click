@@ -115,3 +115,123 @@ def get_month_k_data_no_adjust(code, columns, start_date=None, end_date=None):
     if (end_date is None):
         end_date = datetime.today().strftime('%Y-%m-%d')
     return utils.get_week_or_month_k_data(code, columns, start_date, end_date, week_or_month='m', adjust_flag='3')
+
+#-------------------------------------------------------------------------------
+# 得到一支股票5分钟k前复权数据
+#-------------------------------------------------------------------------------
+def get_5_minutes_k_data_pre_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1999-07-26"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_minutes_k_data(code, columns, start_date, end_date, minute_freq = '5', adjust_flag='2'):
+
+#-------------------------------------------------------------------------------
+# 得到一支股票5分钟k后复权数据
+#-------------------------------------------------------------------------------
+def get_5_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1999-07-26"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_minutes_k_data(code, columns, start_date, end_date, minute_freq = '5', adjust_flag='1'):
+
+#-------------------------------------------------------------------------------
+# 得到一支股票5分钟k未复权数据
+#-------------------------------------------------------------------------------
+def get_5_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1999-07-26"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_minutes_k_data(code, columns, start_date, end_date, minute_freq = '5', adjust_flag='3'):
+
+#-------------------------------------------------------------------------------
+# 得到一支股票15分钟k前复权数据
+#-------------------------------------------------------------------------------
+def get_15_minutes_k_data_pre_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1999-07-26"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_minutes_k_data(code, columns, start_date, end_date, minute_freq = '15', adjust_flag='2'):
+
+#-------------------------------------------------------------------------------
+# 得到一支股票15分钟k后复权数据
+#-------------------------------------------------------------------------------
+def get_15_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1999-07-26"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_minutes_k_data(code, columns, start_date, end_date, minute_freq = '15', adjust_flag='1'):
+
+#-------------------------------------------------------------------------------
+# 得到一支股票15分钟k未复权数据
+#-------------------------------------------------------------------------------
+def get_15_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1999-07-26"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_minutes_k_data(code, columns, start_date, end_date, minute_freq = '15', adjust_flag='3'):
+
+#-------------------------------------------------------------------------------
+# 得到一支股票30分钟k前复权数据
+#-------------------------------------------------------------------------------
+def get_30_minutes_k_data_pre_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1999-07-26"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_minutes_k_data(code, columns, start_date, end_date, minute_freq = '30', adjust_flag='2'):
+
+#-------------------------------------------------------------------------------
+# 得到一支股票30分钟k后复权数据
+#-------------------------------------------------------------------------------
+def get_30_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1999-07-26"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_minutes_k_data(code, columns, start_date, end_date, minute_freq = '30', adjust_flag='1'):
+
+#-------------------------------------------------------------------------------
+# 得到一支股票30分钟k未复权数据
+#-------------------------------------------------------------------------------
+def get_30_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1999-07-26"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_minutes_k_data(code, columns, start_date, end_date, minute_freq = '30', adjust_flag='3'):
+
+#-------------------------------------------------------------------------------
+# 得到一支股票60分钟k前复权数据
+#-------------------------------------------------------------------------------
+def get_60_minutes_k_data_pre_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1999-07-26"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_minutes_k_data(code, columns, start_date, end_date, minute_freq = '60', adjust_flag='2'):
+
+#-------------------------------------------------------------------------------
+# 得到一支股票60分钟k后复权数据
+#-------------------------------------------------------------------------------
+def get_60_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1999-07-26"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_minutes_k_data(code, columns, start_date, end_date, minute_freq = '60', adjust_flag='1'):
+
+#-------------------------------------------------------------------------------
+# 得到一支股票60分钟k未复权数据
+#-------------------------------------------------------------------------------
+def get_60_minutes_k_data_post_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1999-07-26"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_minutes_k_data(code, columns, start_date, end_date, minute_freq = '60', adjust_flag='3'):
