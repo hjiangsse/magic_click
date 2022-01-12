@@ -27,7 +27,7 @@ def get_astock_list():
     return a_stock_list
 
 #-------------------------------------------------------------------------------
-# 得到一支股票的前复权数据
+# 得到一支股票日k前复权数据
 #-------------------------------------------------------------------------------
 def get_day_k_data_pre_adjust(code, columns, start_date=None, end_date=None):
     if (start_date is None):
@@ -37,7 +37,7 @@ def get_day_k_data_pre_adjust(code, columns, start_date=None, end_date=None):
     return utils.get_day_k_data(code, columns, start_date, end_date, adjust_flag='2')
 
 #-------------------------------------------------------------------------------
-# 得到一支股票的后复权数据
+# 得到一支股票日k后复权数据
 #-------------------------------------------------------------------------------
 def get_day_k_data_post_adjust(code, columns, start_date=None, end_date=None):
     if (start_date is None):
@@ -47,7 +47,7 @@ def get_day_k_data_post_adjust(code, columns, start_date=None, end_date=None):
     return utils.get_day_k_data(code, columns, start_date, end_date, adjust_flag='1')
 
 #-------------------------------------------------------------------------------
-# 得到一支股票的未复权数据
+# 得到一支股票日k未复权数据
 #-------------------------------------------------------------------------------
 def get_day_k_data_no_adjust(code, columns, start_date=None, end_date=None):
     if (start_date is None):
@@ -55,3 +55,63 @@ def get_day_k_data_no_adjust(code, columns, start_date=None, end_date=None):
     if (end_date is None):
         end_date = datetime.today().strftime('%Y-%m-%d')
     return utils.get_day_k_data(code, columns, start_date, end_date, adjust_flag='3')
+
+#-------------------------------------------------------------------------------
+# 得到一支股票周k前复权数据
+#-------------------------------------------------------------------------------
+def get_week_k_data_pre_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1990-12-19"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_week_or_month_k_data(code, columns, start_date, end_date, week_or_month='w', adjust_flag='2')
+
+#-------------------------------------------------------------------------------
+# 得到一支股票周k后复权数据
+#-------------------------------------------------------------------------------
+def get_week_k_data_post_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1990-12-19"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_week_or_month_k_data(code, columns, start_date, end_date, week_or_month='w', adjust_flag='1')
+
+#-------------------------------------------------------------------------------
+# 得到一支股票周k未复权数据
+#-------------------------------------------------------------------------------
+def get_week_k_data_no_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1990-12-19"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_week_or_month_k_data(code, columns, start_date, end_date, week_or_month='w', adjust_flag='3')
+
+#-------------------------------------------------------------------------------
+# 得到一支股票月k前复权数据
+#-------------------------------------------------------------------------------
+def get_month_k_data_pre_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1990-12-19"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_week_or_month_k_data(code, columns, start_date, end_date, week_or_month='m', adjust_flag='2')
+
+#-------------------------------------------------------------------------------
+# 得到一支股票月k后复权数据
+#-------------------------------------------------------------------------------
+def get_month_k_data_post_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1990-12-19"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_week_or_month_k_data(code, columns, start_date, end_date, week_or_month='m', adjust_flag='1')
+
+#-------------------------------------------------------------------------------
+# 得到一支股票月k未复权数据
+#-------------------------------------------------------------------------------
+def get_month_k_data_no_adjust(code, columns, start_date=None, end_date=None):
+    if (start_date is None):
+        start_date = "1990-12-19"
+    if (end_date is None):
+        end_date = datetime.today().strftime('%Y-%m-%d')
+    return utils.get_week_or_month_k_data(code, columns, start_date, end_date, week_or_month='m', adjust_flag='3')
