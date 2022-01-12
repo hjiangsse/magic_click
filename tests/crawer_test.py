@@ -65,3 +65,51 @@ if __name__ == "__main__":
     df_sh_600000 = crawler.get_5_minutes_k_data_no_adjust("sh.600000", [])
     print("time cost: ", time.time() - start)
     print(df_sh_600000)
+
+    # 5. 15分钟k线数据获取回测
+    start = time.time()
+    df_sh_600000 = crawler.get_15_minutes_k_data_pre_adjust("sh.600000", [])
+    print("time cost: ", time.time() - start)
+    print(df_sh_600000)
+    
+    start = time.time()
+    df_sh_600000 = crawler.get_15_minutes_k_data_post_adjust("sh.600000", [])
+    print("time cost: ", time.time() - start)
+    print(df_sh_600000)
+    
+    start = time.time()
+    df_sh_600000 = crawler.get_15_minutes_k_data_no_adjust("sh.600000", [])
+    print("time cost: ", time.time() - start)
+    print(df_sh_600000)
+
+    # 6. 30分钟k线数据获取回测
+    start = time.time()
+    df_sh_600000 = crawler.get_30_minutes_k_data_pre_adjust("sh.600000", [])
+    print("time cost: ", time.time() - start)
+    print(df_sh_600000)
+    
+    start = time.time()
+    df_sh_600000 = crawler.get_30_minutes_k_data_post_adjust("sh.600000", [])
+    print("time cost: ", time.time() - start)
+    print(df_sh_600000)
+    
+    start = time.time()
+    df_sh_600000 = crawler.get_30_minutes_k_data_no_adjust("sh.600000", [])
+    print("time cost: ", time.time() - start)
+    print(df_sh_600000)
+
+    # 6. 30分钟k线数据获取回测
+    start = time.time()
+    df_sh_600000 = crawler.get_60_minutes_k_data_pre_adjust("sh.600000", [])
+    print("time cost: ", time.time() - start)
+    print(df_sh_600000)
+    
+    start = time.time()
+    df_sh_600000 = crawler.get_60_minutes_k_data_post_adjust("sh.600000", [])
+    print("time cost: ", time.time() - start)
+    print(df_sh_600000)
+    
+    start = time.time()
+    df_sh_600000 = crawler.get_60_minutes_k_data_no_adjust("sh.600000", [])
+    print("time cost: ", time.time() - start)
+    print(df_sh_600000)
