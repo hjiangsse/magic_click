@@ -8,7 +8,6 @@
 ``` bash
 pip install --force-reinstall ./dist/magic-click-0.0.3.tar.gz -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
-
 # 2. 使用样例(tests中有更详细的案例):
 ## 2.1 K线数据抓取:
 ``` python
